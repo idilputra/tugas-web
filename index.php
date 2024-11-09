@@ -35,12 +35,13 @@ if ($endPage - $startPage < $paginationRange - 1) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Data Mata Kuliah CRUD</title>
+    <title>Data Mata Kuliah CRUD </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Belajar Membuat CRUD dasar</h1>
+        
+        <h1>Belajar CRUD</h1>
         <h1>Data Mata Kuliah</h1>
         
         <div class="action-bar">
@@ -51,29 +52,37 @@ if ($endPage - $startPage < $paginationRange - 1) {
             <a href="create.php" class="button add-button">+ Add New</a>
         </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Kode MK</th>
-                    <th>Nama MK</th>
-                    <th>Jumlah Praktikan</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php while ($row = $result->fetch_assoc()): ?>
-                    <tr>
-                        <td><?= htmlspecialchars($row['kode_mk']) ?></td>
-                        <td><?= htmlspecialchars($row['nama_mk']) ?></td>
-                        <td><?= htmlspecialchars($row['jumlah_praktikan']) ?></td>
-                        <td class="action-buttons">
-                            <a href="update.php?kode_mk=<?= $row['kode_mk'] ?>" class="button edit-button">Edit</a>
-                            <a href="delete.php?kode_mk=<?= $row['kode_mk'] ?>" class="button delete-button" onclick="return confirm('Are you sure?')">Delete</a>
-                        </td>
-                    </tr>
-                <?php endwhile; ?>
-            </tbody>
-        </table>
+     <table>
+    <thead>
+        <tr>
+            <th>No</th> <!-- Add a column for the row number -->
+            <th>Kode MK</th>
+            <th>Nama MK</th>
+            <th>Jumlah Praktikan</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php 
+        $rowNumber = $currentStart; // Start row number from the current start of pagination
+        while ($row = $result->fetch_assoc()): 
+        ?>
+            <tr>
+                <td><?= $rowNumber++ ?></td> <!-- Display and increment the row number -->
+                <td><?= htmlspecialchars($row['kode_mk']) ?></td>
+                <td><?= htmlspecialchars($row['nama_mk']) ?></td>
+                <td><?= htmlspecialchars($row['jumlah_praktikan']) ?></td>
+                <td class="action-buttons">
+                    <a href="update.php?kode_mk=<?= $row['kode_mk'] ?>" class="button edit-button">Edit</a>
+                    <a href="delete.php?kode_mk=<?= $row['kode_mk'] ?>" class="button delete-button" onclick="return confirm('apakah kamu tidak mencintai saya lagi?')">Delete</a>
+                </td>
+            </tr>
+        <?php endwhile; ?>
+    </tbody>
+</table>
+        
+       
+
 
         <!-- Pagination with Range Selector -->
         <div class="pagination-container">
@@ -100,9 +109,17 @@ if ($endPage - $startPage < $paginationRange - 1) {
                         <option value="<?= $option ?>" <?= $option == $limit ? 'selected' : '' ?>><?= $option ?></option>
                     <?php endforeach; ?>
                 </select>
+        
+
             </div>
         </div>
+                   <footer class="footer">
+                   Made with ❤️ copyright  idil Putra
+                 </footer>
     </div>
+    
+ 
+    </body>
 
     <script>
         function changeLimit(limit) {
@@ -112,5 +129,5 @@ if ($endPage - $startPage < $paginationRange - 1) {
             window.location.href = url;
         }
     </script>
-</body>
+
 </html>

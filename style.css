@@ -188,3 +188,418 @@ tr:nth-child(even) {
     background-color: #f5f5f5;
     cursor: pointer;
 }
+
+/* Styling for the Add New button */
+.add-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for Edit and Delete buttons */
+.edit-button, .delete-button {
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button {
+    background-color: #2196F3; /* Blue color */
+}
+
+.edit-button:hover {
+    background-color: #0b7dda;
+}
+
+.delete-button {
+    background-color: #f44336; /* Red color */
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+/* General button styles */
+.button {
+    cursor: pointer;
+    display: inline-block;
+}
+
+/*footer*/
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Set a fixed height to ensure vertical centering */
+    background: linear-gradient(90deg, #007bff, #6f42c1); /* Gradient background */
+    color: #fff;
+    font-size: 16px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.footer:hover {
+    background: linear-gradient(90deg, #0056b3, #4b0082); /* Darker gradient on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Container for the form */
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Form heading */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input[type="number"],
+form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+form input[type="number"]:focus,
+form input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Add Button styling */
+button[type="submit"] {
+    padding: 10px;
+    background-color: #28a745; /* Green color for "Add" */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Back to list link styling */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 12px;
+    background-color: #007bff; /* Blue color for "Back to list" */
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+
+/* Body styling for center alignment */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* Container styling for the form */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Header styling */
+.form-header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #f8eae7;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Label styling */
+form label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Form input styling */
+/* Centered body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* Container styling */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 30px 20px;
+}
+
+/* Header styling */
+.form-header {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #f9f3f1;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 25px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Label styling */
+form label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Form input styling */
+.form-group {
+    flex: 1 1 45%; /* Two-column layout */
+}
+
+.form-group.full-width {
+    flex: 1 1 100%; /* Full width for single row fields */
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+    color: #333;
+}
+
+form input[type="text"]::placeholder,
+form input[type="number"]::placeholder,
+form input[type="email"]::placeholder,
+form input[type="tel"]::placeholder,
+form input[type="password"]::placeholder {
+    color: #aaa; /* Lighter color for placeholder */
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="password"]:focus {
+    border-color: #666;
+    outline: none;
+}
+
+/* Submit button styling */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Blue color for "Submit" */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Back to list button styling */
+.back-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: transparent;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    color: #0056b3;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button.submit-button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button.submit-button:hover {
+    background-color: #45a049;
+}
+
+a.back-button {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+a.back-button:hover {
+    text-decoration: underline;
+}
+
+
