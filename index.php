@@ -40,7 +40,7 @@ if ($endPage - $startPage < $paginationRange - 1) {
 </head>
 <body>
     <div class="container">
-        <h1>Membuat CRUD</h1>
+        <h1>Belajar Membuat CRUD dasar</h1>
         <h1>Data Mata Kuliah</h1>
         
         <div class="action-bar">
