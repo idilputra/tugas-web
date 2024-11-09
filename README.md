@@ -21,7 +21,7 @@ Repository ini berisi kode sumber aplikasi CRUD sederhana yang dibangun dengan P
 
 1. **Kloning repository** ini:
    ```bash
-   git clone https://github.com/username/CRUD-application-php.git
+   git clone [https://github.com/username/CRUD-application-php.git](https://github.com/idilputra/tugas-web.git)
    ```
 
 2. **Konfigurasi database**:
