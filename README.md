@@ -57,4 +57,4 @@ Fork, buat perubahan, dan kirimkan pull request jika ingin berkontribusi dalam p
 
 ## Lisensi
 
-Aplikasi ini hanya untuk keperluan pendidikan.
+Aplikasi ini hanya dibuat untuk tugas Pemograman Website bersama dengan Buk Indah STTIND padang
